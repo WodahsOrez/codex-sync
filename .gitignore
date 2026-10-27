@@ -1,0 +1,25 @@
+# Only the reviewed portable payload belongs in this repository.
+*
+!/.gitignore
+!/README.md
+!/codex/
+/codex/*
+!/codex/AGENTS.md
+!/codex/config.toml
+!/codex/skills/
+/codex/skills/*
+!/codex/skills/dhr-local-dock/
+!/codex/skills/dhr-local-dock/**
+
+# Never commit credentials, runtime state or caches inside a skill.
+**/auth.json
+**/.env
+**/.env.*
+**/*.pem
+**/*.key
+**/*.pfx
+**/*.p12
+**/node_modules/
+**/__pycache__/
+**/*.pyc
+**/.DS_Store

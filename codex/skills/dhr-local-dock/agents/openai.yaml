@@ -1,0 +1,6 @@
+interface:
+  display_name: "DHR 本地代理调试"
+  short_description: "通过 Local Dock 复用或启动当前 DHR 仓库及 worktree 的隔离调试服务"
+  default_prompt: "使用 $dhr-local-dock 为当前 DHR 工作目录准备隔离服务并验证本次修改。"
+policy:
+  allow_implicit_invocation: true
