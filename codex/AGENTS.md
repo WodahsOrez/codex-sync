@@ -13,6 +13,6 @@
 
 ## DHR 个人本地运行约定
 
-- 对来自 `git.gct-china.com/paas/frontend/gct-dhr-kit` 的 checkout（如 dhr-dev/dhr-test）及其分叉 worktree，需要本地启动、调试或浏览器验收时，先阅读 dhr-local-dock 技能（位于当前用户的 `%USERPROFILE%\.codex\skills\dhr-local-dock\SKILL.md`；若设置了 `CODEX_HOME`，则位于该目录下的 `skills\dhr-local-dock\SKILL.md`），并按当前 cwd 的 Git 根目录复用或登记 Local Dock 服务。先核实 remote，不只按目录名判断。
+- 对来自 `git.gct-china.com/paas/frontend/gct-dhr-kit` 的 checkout（如 dhr-dev/dhr-test）及其分叉 worktree，需要本地启动、调试或浏览器验收时，先阅读 [dhr-local-dock 技能](C:/Users/yumoz/.codex/skills/dhr-local-dock/SKILL.md)，并按当前 cwd 的 Git 根目录复用或登记 Local Dock 服务。先核实 remote，不只按目录名判断。
 - 这是用户的个人启动偏好：使用 Local Dock，业务仓库文档中的 Nginx/直接 dev 启动步骤作为旧方式；保留其静态检查和构建约定。用户本次明确指定其他方式时遵循用户。纯文档和不需运行的任务不自动起服务。
 - 不使用主 checkout 的地址验证 worktree，不覆盖个人配置、不重启管理软件或影响其他仓库服务；浏览器仍遵守上面的专用窗口与登录规则。

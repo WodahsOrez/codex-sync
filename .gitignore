@@ -1,17 +1,24 @@
-# Only the reviewed portable payload belongs in this repository.
+# Allow only reviewed backup categories.
 *
 !/.gitignore
+!/.gitattributes
 !/README.md
+!/backup-manifest.json
 !/codex/
 /codex/*
 !/codex/AGENTS.md
 !/codex/config.toml
 !/codex/skills/
-/codex/skills/*
-!/codex/skills/dhr-local-dock/
-!/codex/skills/dhr-local-dock/**
+!/codex/skills/**
+!/portable/
+!/portable/AGENTS.md
+!/portable/config.toml
+!/plugin-skills/
+!/plugin-skills/**
+!/agent-skills/
+!/agent-skills/**
 
-# Never commit credentials, runtime state or caches inside a skill.
+# Credentials and generated files never belong in a skills snapshot.
 **/auth.json
 **/.env
 **/.env.*

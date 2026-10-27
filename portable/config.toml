@@ -1,0 +1,50 @@
+# Portable personal preferences. Merge into the destination config.toml.
+model = "gpt-6.1-sol"
+model_reasoning_effort = "high"
+service_tier = "default"
+model_verbosity = "high"
+
+[desktop]
+followUpQueueMode = "queue"
+conversationDetailMode = "STEPS_COMMANDS"
+ambient-suggestions-enabled = false
+enabled-reasoning-efforts = ["low", "medium", "high", "xhigh", "persistent"]
+show-context-window-usage = true
+selected-avatar-id = "fireball"
+appearanceTheme = "dark"
+
+[desktop.open-in-target-preferences]
+global = "vscode"
+
+[plugins."codex-app-tools@openai-bundled"]
+enabled = true
+
+[plugins."visualize@openai-bundled"]
+enabled = true
+
+[plugins."documents@openai-primary-runtime"]
+enabled = true
+
+[plugins."pdf@openai-primary-runtime"]
+enabled = true
+
+[plugins."spreadsheets@openai-primary-runtime"]
+enabled = true
+
+[plugins."presentations@openai-primary-runtime"]
+enabled = true
+
+[plugins."template-creator@openai-primary-runtime"]
+enabled = true
+
+[plugins."browser@openai-bundled"]
+enabled = true
+
+[plugins."unified-computer-use@openai-bundled"]
+enabled = true
+
+[plugins."computer-use@openai-bundled"]
+enabled = true
+
+[windows]
+sandbox = "elevated"

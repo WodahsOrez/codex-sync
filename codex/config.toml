@@ -1,9 +1,9 @@
-# Portable personal preferences. Merge into the destination config.toml.
 model = "gpt-6.1-sol"
 model_reasoning_effort = "high"
+
 service_tier = "default"
 model_verbosity = "high"
-
+notify = [ "C:\\Users\\yumoz\\AppData\\Local\\OpenAI\\Codex\\runtimes\\cua_node\\1fb7137c46617d50\\bin\\node_modules\\@oai\\sky\\bin\\windows\\codex-computer-use.exe", "turn-ended" ]
 [desktop]
 followUpQueueMode = "queue"
 conversationDetailMode = "STEPS_COMMANDS"
@@ -11,10 +11,23 @@ ambient-suggestions-enabled = false
 enabled-reasoning-efforts = ["low", "medium", "high", "xhigh", "persistent"]
 show-context-window-usage = true
 selected-avatar-id = "fireball"
+git-worktree-root = "D:/Program Cache/CodexWorktrees"
 appearanceTheme = "dark"
 
 [desktop.open-in-target-preferences]
 global = "vscode"
+
+[desktop.open-in-target-preferences.perPath]
+'D:\Program Cache\CodexWorktrees\227d\dhr-dev-tools' = "vscode"
+'D:\Program Cache\CodexWorktrees\469e\dhr-test' = "vscode"
+
+[marketplaces.openai-bundled]
+source_type = "local"
+source = '\\?\C:\Users\yumoz\.codex\.tmp\bundled-marketplaces\openai-bundled'
+
+[marketplaces.openai-primary-runtime]
+source_type = "local"
+source = '\\?\C:\Users\yumoz\.cache\codex-runtimes\codex-primary-runtime\plugins\openai-primary-runtime'
 
 [plugins."codex-app-tools@openai-bundled"]
 enabled = true
@@ -46,5 +59,66 @@ enabled = true
 [plugins."computer-use@openai-bundled"]
 enabled = true
 
+[mcp_servers.node_repl]
+args = []
+command = 'C:\Users\yumoz\AppData\Local\OpenAI\Codex\runtimes\cua_node\1fb7137c46617d50\bin\node_repl.exe'
+env_vars = ["BROWSER_USE_ACCESS_EXECUTOR_ID", "BROWSER_USE_ACCESS_PIPE_PATH", "BROWSER_USE_ACCESS_VERIFYING_IDENTITY", "CODEX_WINDOWS_REGISTERED_CORE"]
+startup_timeout_sec = 120
+
+[mcp_servers.node_repl.env]
+NODE_REPL_NATIVE_PIPE_CONNECT_TIMEOUT_MS = "1000"
+NODE_REPL_NODE_MODULE_DIRS = 'C:\Users\yumoz\AppData\Local\OpenAI\Codex\runtimes\cua_node\1fb7137c46617d50\bin\node_modules'
+NODE_REPL_NODE_PATH = 'C:\Users\yumoz\AppData\Local\OpenAI\Codex\runtimes\cua_node\1fb7137c46617d50\bin\node.exe'
+NODE_REPL_TRUSTED_CODE_PATHS = 'C:\Users\yumoz\.codex;C:\Users\yumoz\AppData\Local\OpenAI\Codex\runtimes\cua_node\1fb7137c46617d50\bin\node_modules'
+CODEX_HOME = 'C:\Users\yumoz\.codex'
+BROWSER_USE_AVAILABLE_BACKENDS = "chrome,iab,mcpapps"
+BROWSER_USE_TINYSKY_ENABLED = "1"
+NODE_REPL_INSTRUCTIONS_USE_CASE_BROWSER = ""
+NODE_REPL_INSTRUCTIONS_USE_CASE_CHROME = ""
+BROWSER_USE_CODEX_APP_BUILD_FLAVOR = "prod"
+BROWSER_USE_CODEX_APP_VERSION = "26.1021.31345"
+NODE_REPL_TRUSTED_SERVICES = '{"browser":"C:/Users/yumoz/.codex/plugins/cache/openai-bundled/browser/26.1021.31345/scripts/browser-service.mjs","sky":"@oai/sky/service"}'
+SKY_CUA_NATIVE_PIPE = "1"
+SKY_CUA_NATIVE_PIPE_DIRECTORY = '\\.\pipe\codex-computer-use-4ce1a579-d0c5-4782-8df9-48cce1568b8a'
+CODEX_CLI_PATH = 'C:\Users\yumoz\AppData\Local\OpenAI\Codex\bin\2993767bd1dfb009\codex.exe'
+NODE_REPL_UNTRUSTED_ENV_ALLOWLIST = "CODEX_WINDOWS_REGISTERED_CORE"
+NODE_REPL_INSTRUCTIONS_USE_CASE_COMPUTER_USE = ""
+
 [windows]
 sandbox = "elevated"
+
+[projects.'c:\users\yumoz\documents\codex\2026-09-24\gei']
+trust_level = "trusted"
+
+[projects.'c:\users\yumoz\documents\codex\2026-09-28\ni-d']
+trust_level = "trusted"
+
+[projects.'c:\users\yumoz\documents\codex\2026-09-28\wei']
+trust_level = "trusted"
+
+[projects.'c:\users\yumoz\documents\codex\2026-09-29\w']
+trust_level = "trusted"
+
+[projects.'c:\users\yumoz\documents\codex\2026-09-29\zui']
+trust_level = "trusted"
+
+[projects.'c:\users\yumoz\documents\codex\2026-09-29\no']
+trust_level = "trusted"
+
+[projects.'c:\users\yumoz\documents\codex\2026-09-30\http-paas-paasdevsix-gct-paas-com']
+trust_level = "trusted"
+
+[projects.'c:\users\yumoz\documents\chatgpt\杂七杂八']
+trust_level = "trusted"
+
+[projects.'d:\repository\gct\dhr-dev']
+trust_level = "trusted"
+
+[projects.'d:\repository\gct\dhr-test']
+trust_level = "trusted"
+
+[projects.'D:\Repository\gct\business']
+trust_level = "trusted"
+
+[projects.'D:\Repository\gct\dhr-dev-tools']
+trust_level = "trusted"
